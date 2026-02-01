@@ -12,7 +12,7 @@ export default async function Page({ params }) {
   if (!paste) notFound();
 
   return (
-    <pre className="p-5 text-black bg-amber-100 text-center whitespace-pre-wrap">
+    <pre className="p-5 text-black bg-white h-screen text-center whitespace-pre-wrap">
       {paste.content}
     </pre>
   );
