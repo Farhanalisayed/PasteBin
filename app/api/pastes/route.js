@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { redis } from "@/lib/redis";
 import { nanoid } from "nanoid";
+import { BASE_URL } from "@/lib/config";
 
 export async function POST(req) {
   const { content, ttl_seconds, max_views } = await req.json();
@@ -30,6 +31,6 @@ export async function POST(req) {
 
   return NextResponse.json({
     id,
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/p/${id}`,
+    url: `${BASE_URL}/p/${id}`,
   });
 }
