@@ -57,7 +57,7 @@ export default function Home() {
 
         <button
           onClick={createPaste}
-          className="mt-4 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+          className="mt-4 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 cursor-pointer"
         >
           Create Paste
         </button>
